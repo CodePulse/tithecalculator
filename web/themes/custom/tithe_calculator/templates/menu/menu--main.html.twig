@@ -1,0 +1,86 @@
+{#
+/**
+ * @file
+ * Theme override to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *   - is_expanded: TRUE if the link has visible children within the current
+ *     menu tree.
+ *   - is_collapsed: TRUE if the link has children within the current menu tree
+ *     that are not currently visible.
+ *   - in_active_trail: TRUE if the link is in the active trail.
+ */
+#}
+{% import _self as menus %}
+
+{#
+  We call a macro which calls itself to render the full tree.
+  @see http://twig.sensiolabs.org/doc/tags/macro.html
+#}
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  <div class="collapse navbar-collapse flex-grow-0 weight-500">
+    <div class="navbar-nav">
+      {% import _self as menus %}
+      {% for item in items %}
+        <div class="nav-item"><a class="nav-link text-dark pl-0" href="{{ item.url }}">{{ item.title }}</a></div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="d-lg-none ml-auto">
+    <div class="nav-item"><a class="nav-link text-dark pr-0" href=""><img src="/themes/custom/tithe_calculator/build/assets/glyphs/search.svg"/></a></div>
+  </div>
+  <div class="navbar-side" id="headers-4-sidebar" data-id="headers-4-sidebar-close">
+    <div class="navbar-side-content d-flex flex-column justify-content-between">
+      <div class="weight-700"><a class="navbar-side-close mb-4" href="" data-id="headers-4-sidebar-close">
+          <img src="/themes/custom/tithe_calculator/build/assets/glyphs/close.svg" width="32"/>
+        </a>
+        <div class="navbar-nav">
+          {% for item in items %}
+            <div class="nav-item"><a class="nav-link text-dark pl-0" href="{{ item.url }}">{{ item.title }}</a></div>
+          {% endfor %}
+          <div class="nav-item d-none d-lg-block">
+            <a class="nav-link text-dark pr-0" href="">
+              <img src="/themes/custom/tithe_calculator/build/assets/glyphs/search.svg"/>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="mb-3">
+          <a class="transparent-invert-link" href="">
+            <img src="/themes/custom/tithe_calculator/build/assets/glyphs/instagram-small.svg" width="16"/>
+          </a>
+          <a class="transparent-invert-link ml-2" href="">
+            <img src="/themes/custom/tithe_calculator/build/assets/glyphs/facebook-small.svg" width="16"/>
+          </a>
+          <a class="transparent-invert-link ml-2" href="">
+            <img src="/themes/custom/tithe_calculator/build/assets/glyphs/twitter-small.svg" width="16"/>
+          </a>
+        </p>
+        <p class="small mb-0">
+          <span class="d-block d-xl-inline text-muted mb-1 mb-xl-0 mr-2">&copy; 2019 Process System Enterprise. All right reserved.</span>
+          <a class="text-muted mr-2" href="">
+            <span>Privacy Policy</span>
+          </a>
+          <a class="text-muted" href="">
+            <span>Terms of Service</span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="navbar-side-content weight-700"><a class="navbar-side-close mb-4" href=""
+                                                   data-id="headers-4-sidebar-close"><img
+          src="/themes/custom/tithe_calculator/build/assets/glyphs/close.svg" width="32"/></a></div>
+  </div>
+
+{% endmacro %}

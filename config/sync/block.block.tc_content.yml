@@ -1,0 +1,22 @@
+uuid: 00d1e7db-f11e-459a-8507-1c9d8c8351e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tc
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: tc_content
+theme: tc
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

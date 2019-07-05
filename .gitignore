@@ -23,5 +23,5 @@ web/sites/simpletest
 # Ignore .env files as they are personal
 .env
 
-web/themes/custom/pse_light/node_modules/*
+web/themes/custom/tithe_calculator/node_modules*
 web/assets/

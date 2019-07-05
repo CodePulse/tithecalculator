@@ -1,0 +1,22 @@
+uuid: 8d9385af-4d54-4a24-b8f5-1b9a31616bc1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tithe_calculator
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: tithe_calculator_content
+theme: tithe_calculator
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

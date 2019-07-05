@@ -1,0 +1,27 @@
+uuid: 4cbbf47b-a846-4e5a-a093-c2dc33e3bf74
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tithe_calculator
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: tithe_calculator_breadcrumbs
+theme: tithe_calculator
+region: header
+weight: -2
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

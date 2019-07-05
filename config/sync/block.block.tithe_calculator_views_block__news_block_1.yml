@@ -1,0 +1,20 @@
+uuid: 25c553d0-1cb4-4200-8af8-2185dc79a0ea
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tithe_calculator
+id: tithe_calculator_views_block__news_block_1
+theme: tithe_calculator
+region: callable_blocks
+weight: 0
+provider: null
+plugin: 'views_block:news-block_1'
+settings:
+  id: 'views_block:news-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

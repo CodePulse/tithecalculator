@@ -1,0 +1,22 @@
+uuid: 05151873-df71-43ab-ac9c-09f2e8f2b47d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tithe_calculator
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: tithe_calculator_local_tasks
+theme: tithe_calculator
+region: content
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: d6016c62-6502-4418-874c-815dc8eeec25
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tithe_calculator
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: tithe_calculator_messages
+theme: tithe_calculator
+region: content
+weight: -1
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

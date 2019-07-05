@@ -1,0 +1,20 @@
+uuid: 79c39990-b06c-42e0-8275-f49c6977dfd6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tc
+id: tc_views_block__news_block_1
+theme: tc
+region: callable_blocks
+weight: 0
+provider: null
+plugin: 'views_block:news-block_1'
+settings:
+  id: 'views_block:news-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }
