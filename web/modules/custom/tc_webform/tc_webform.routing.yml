@@ -1,0 +1,7 @@
+tc_webform.webform-confirmation:
+  path: '/results/{webform_submission_token}'
+  defaults:
+    _controller: '\Drupal\tc_webform\Controller\TCWebformConfirmation::render'
+    _title: 'Calculator result'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @implements hook_theme()
+ */
+function tc_webform_theme() {
+  return [
+    'tc-webform-result-weekly' => [
+      'variables' => ['content' => NULL],
+    ],
+    'tc-webform-result-monthly' => [
+      'variables' => ['content' => NULL],
+    ],
+  ];
+}
