@@ -1,13 +1,13 @@
-.pse-local-task-item {
+.tc-local-task-item {
   list-style: none;
   display: inline-block;
   a {
     color: white;
-    background: #ef7e06;
+    background: $pse-blue;
     padding: 10px;
     border-radius: 5px;
     &:hover {
-      background: $blue;
+      background: $cyan;
     }
   }
 }

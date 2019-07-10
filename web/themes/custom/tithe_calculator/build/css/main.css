@@ -6717,16 +6717,16 @@ a.text-white:hover, a.text-white:focus {
 .pse-news-article .article-hero {
   background-size: cover; }
 
-.pse-local-task-item {
+.tc-local-task-item {
   list-style: none;
   display: inline-block; }
-  .pse-local-task-item a {
+  .tc-local-task-item a {
     color: white;
-    background: #ef7e06;
+    background: #33b3cc;
     padding: 10px;
     border-radius: 5px; }
-    .pse-local-task-item a:hover {
-      background: #33b3cc; }
+    .tc-local-task-item a:hover {
+      background: #17a2b8; }
 
 footer {
   background: #3c3c3b;
