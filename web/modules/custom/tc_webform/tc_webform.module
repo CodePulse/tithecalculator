@@ -5,10 +5,7 @@
  */
 function tc_webform_theme() {
   return [
-    'tc-webform-result-weekly' => [
-      'variables' => ['content' => NULL],
-    ],
-    'tc-webform-result-monthly' => [
+    'tc-webform-result' => [
       'variables' => ['content' => NULL],
     ],
   ];

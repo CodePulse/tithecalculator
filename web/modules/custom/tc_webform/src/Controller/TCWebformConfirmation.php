@@ -25,14 +25,13 @@ class TCWebformConfirmation extends ControllerBase {
         ->getStorage('webform_submission')
         ->loadByProperties(['token' => $webform_submission_token]);
       $content = $this->processedContent($webform);
-      $ff = 0;
     }
     else {
-      $content = 'WELL ODNE!';
+      $content = '';
     }
 
     return [
-      '#theme' => $content['theme'],
+      '#theme' => 'tc-webform-result',
       '#content' => $content,
     ];
   }
@@ -47,7 +46,6 @@ class TCWebformConfirmation extends ControllerBase {
 
     $tithe_amount = $this->titheCalculations($tithe_percentage, $income);
     $year_tithe = $this->yearlyTithe($tithe_amount);
-    $theme = $this->getTheme($frequency);
 
     return [
       'tithe_percentage' => $tithe_percentage,
@@ -55,7 +53,6 @@ class TCWebformConfirmation extends ControllerBase {
       'income' => $income,
       'tithe_amount' => number_format($tithe_amount, 2),
       'yearly_tithe' => number_format($year_tithe, 2),
-      'theme' => $theme,
     ];
   }
 
