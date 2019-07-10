@@ -1,0 +1,12 @@
+.results-button {
+  background: #33b3cc;
+  color: #fff;
+  padding: 20px;
+  margin: 10px auto;
+  display: block;
+
+  &:hover {
+    color: #fff;
+    background: #3091cc;
+  }
+}

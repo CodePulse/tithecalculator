@@ -53,8 +53,8 @@ class TCWebformConfirmation extends ControllerBase {
       'tithe_percentage' => $tithe_percentage,
       'frequency' => $frequency,
       'income' => $income,
-      'monthly_tithe' => '',
-      'yearly_tithe' => $year_tithe,
+      'tithe_amount' => number_format($tithe_amount, 2),
+      'yearly_tithe' => number_format($year_tithe, 2),
       'theme' => $theme,
     ];
   }

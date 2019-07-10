@@ -27,7 +27,9 @@ settings:
     default: 0
     page: 0
     feed: 0
+    embed: 0
   preselect_views:
+    ministries: ministries
     news: news
     block_content: 0
     comment: 0
@@ -41,6 +43,7 @@ settings:
     taxonomy_term: 0
     user_admin_people: 0
     watchdog: 0
+    webform_submissions: 0
     who_s_new: 0
     who_s_online: 0
 field_type: viewsreference

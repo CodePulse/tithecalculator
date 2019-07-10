@@ -36,7 +36,7 @@ $grays: map-merge((
   "900": $gray-900
 ), $grays);
 
-$blue:    #006c85 !default;
+$blue:    #33b3cc !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -942,7 +942,7 @@ $breadcrumb-item-padding:           1rem !default;
 $breadcrumb-margin-bottom:          0 !default;
 
 $breadcrumb-bg:                     transparent !default;
-$breadcrumb-divider-color:          $pse-orange !default;
+$breadcrumb-divider-color:          $blue !default;
 $breadcrumb-active-color:           $gray-600 !default;
 $breadcrumb-divider:                quote("") !default;
 

@@ -1,0 +1,30 @@
+uuid: 643316f9-113d-4c0f-b83b-5ffc8ca9052c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ministry.body
+    - node.type.ministry
+  module:
+    - text
+    - user
+id: node.ministry.teaser
+targetEntityType: node
+bundle: ministry
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
