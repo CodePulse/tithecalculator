@@ -9,12 +9,10 @@
      *   An array of settings.
      */
     attach: function (context, settings) {
-      $('[data-id=headers-4-sidebar-toggle]', context).click(function (e) {
-        e.preventDefault();
+      $('[data-id=headers-4-sidebar-toggle] img', context).click(function (e) {
         $('#headers-4-sidebar', context).toggleClass('show');
       });
       $('[data-id=headers-4-sidebar-close]', context).click(function (e) {
-        e.preventDefault();
         $('#headers-4-sidebar', context).removeClass('show');
       });    },
   };
