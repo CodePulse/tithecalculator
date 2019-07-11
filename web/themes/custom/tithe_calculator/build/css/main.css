@@ -1757,6 +1757,12 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     .form-inline .custom-control-label {
       margin-bottom: 0; } }
 
+.form-required::after {
+  content: '*';
+  color: red;
+  padding-left: 5px;
+  font-size: 1em; }
+
 .btn {
   display: inline-block;
   font-weight: 500;
@@ -6691,10 +6697,10 @@ a.text-white:hover, a.text-white:focus {
   background-size: cover;
   background-position: center; }
 
-.pse-news-items {
+.tc-ministry-items {
   display: flex;
   flex-wrap: wrap; }
-  .pse-news-items .pse-news-item {
+  .tc-ministry-items .tc-ministry-item {
     display: flex;
     padding: 0.5em;
     width: 100%; }
@@ -6758,3 +6764,6 @@ footer {
   text-align: center;
   line-height: 30px;
   font-size: 11px; }
+
+.captcha {
+  margin: 15px auto; }

@@ -1,0 +1,11 @@
+uuid: 5cb52961-a3d9-4f63-8593-697a861663bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ministry
+id: node_type_ministry
+action: access_denied
+allow_override: 0
+redirect: ''
+redirect_code: 301

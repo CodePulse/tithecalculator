@@ -15,15 +15,11 @@
  * @see template_preprocess_views_view_unformatted()
  */
 #}
-<div class="pse-news-items">
+<div class="tc-ministry-items">
   <div class="container">
-    <div class="row py-5">
-      <h2 class="col-12 display-4 text-center">{{ 'Latest news' |t }}</h2>
+    <div class="row">
       {% for row in rows %}
-        {% set row_classes = [
-          default_row_class ? 'views-row',
-        ] %}
-        <div class="col-12 col-md-4 mb-3 mb-md-0 pse-news-item">
+        <div class="col-12 col-md-6 col-lg-4 mb-3 tc-ministry-item">
           {{- row.content -}}
         </div>
       {% endfor %}

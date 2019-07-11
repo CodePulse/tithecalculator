@@ -1,0 +1,22 @@
+uuid: 878c5c53-1ad1-45c0-8c51-5ae4957d91d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: ministry
+label: Ministry
+type: 'canonical_entities:node'
+pattern: 'ministries/[node:title]'
+selection_criteria:
+  990bbedd-18fa-493a-8c95-bd90a0183614:
+    id: node_type
+    bundles:
+      ministry: ministry
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 990bbedd-18fa-493a-8c95-bd90a0183614
+selection_logic: and
+weight: -5
+relationships: {  }

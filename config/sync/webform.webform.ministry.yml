@@ -1,4 +1,4 @@
-uuid: 981c73d9-9ae7-4ec6-b94f-33e44a0c9d36
+uuid: 7a626bfd-95fd-48f6-bbc1-8a2a01282678
 langcode: en
 status: open
 dependencies: {  }
@@ -8,11 +8,11 @@ weight: 0
 uid: 1
 template: false
 archive: false
-id: tithe_calculator
-title: 'Tithe calculator'
+id: ministry
+title: Ministry
 description: ''
 category: ''
-elements: "how_often_do_you_get_paid:\n  '#type': select\n  '#title': 'How often do you get paid ?'\n  '#options':\n    weekly: Weekly\n    monthly: Monthly\nhow_much_do_you_get_paid:\n  '#type': number\n  '#title': 'How much do you get paid ?'\ntithe_percentage:\n  '#type': number\n  '#title': 'Tithe percentage (%)'\n  '#min': '10'\ncaptcha:\n  '#type': captcha\n  '#captcha_type': recaptcha/reCAPTCHA\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Calculate"
+elements: "ministry_name:\n  '#type': textfield\n  '#title': 'Ministry name'\n  '#required': true\nministry_website:\n  '#type': url\n  '#title': 'Ministry website'\n  '#description': '<em>The website should begin with <strong>http://</strong> or <strong>https://</strong>.</em>'\n  '#required': true\nyour_name:\n  '#type': textfield\n  '#title': 'Your name'\nyour_email:\n  '#type': email\n  '#title': 'Your email'\ncaptcha:\n  '#type': captcha\n  '#captcha_type': recaptcha/reCAPTCHA"
 css: ''
 javascript: ''
 settings:
@@ -92,16 +92,16 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: url
+  confirmation_type: modal
   confirmation_title: ''
-  confirmation_message: ''
-  confirmation_url: 'results/[webform_submission:token]'
+  confirmation_message: 'Thank you for letting us know about this ministry. We will endeavour to add them asap after they have been vetted.'
+  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
   confirmation_back_attributes: {  }
-  confirmation_exclude_query: true
-  confirmation_exclude_token: true
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
   limit_total: null
   limit_total_interval: null
   limit_total_message: ''

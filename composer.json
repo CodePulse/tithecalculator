@@ -27,6 +27,8 @@
         "drupal/google_tag": "^1.1",
         "drupal/paragraphs": "^1.8",
         "drupal/pathauto": "^1.4",
+        "drupal/rabbit_hole": "^1.0@beta",
+        "drupal/recaptcha": "^2.4",
         "drupal/viewsreference": "^1.4",
         "drupal/webform": "^5.2",
         "drush/drush": "^9.0.0",

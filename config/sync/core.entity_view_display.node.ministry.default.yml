@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.ministry.body
+    - field.field.node.ministry.field_church_website
     - field.field.node.ministry.field_country
     - field.field.node.ministry.field_image
     - node.type.ministry
   module:
+    - link
     - text
     - user
 id: node.ministry.default
@@ -21,6 +23,18 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_church_website:
+    weight: 104
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   field_country:
     weight: 103

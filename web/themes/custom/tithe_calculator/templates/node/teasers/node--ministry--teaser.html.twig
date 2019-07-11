@@ -1,0 +1,8 @@
+<div class="card shadow-sm">
+  <a href="{{ ministry_website }}" target="_blank"><img class="w-100" src="{{ image_path }}"/></a>
+  <div class="card-body">
+    <h2><a href="{{ ministry_website }}" target="_blank">{{ label }}</a></h2>
+    <p class="mb-3">{{ content.body }}</p>
+    <a class="weight-500" href="{{ ministry_website }}" target="_blank"><span>{{ 'Visit ' ~ node.label ~ ''|t }}</span></a>
+  </div>
+</div>

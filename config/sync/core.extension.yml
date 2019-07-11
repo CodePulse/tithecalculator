@@ -6,6 +6,7 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
+  captcha: 0
   ckeditor: 0
   color: 0
   comment: 0
@@ -35,7 +36,10 @@ module:
   page_cache: 0
   path: 0
   quickedit: 0
+  rabbit_hole: 0
   rdf: 0
+  recaptcha: 0
+  rh_node: 0
   search: 0
   shortcut: 0
   system: 0
