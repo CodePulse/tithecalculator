@@ -9,8 +9,8 @@ label: Global
 tags:
   title: '[current-page:title] | [site:name]'
   canonical_url: '[current-page:url]'
-  image_src: /themes/custom/tithe_calculator/images/tc-logo.png
-  og_image: /themes/custom/tithe_calculator/images/tc-logo.png
-  og_image_secure_url: /themes/custom/tithe_calculator/images/tc-logo.png
+  image_src: /themes/custom/tithe_calculator/images/tc-logo-favi.jpg
+  og_image: /themes/custom/tithe_calculator/images/tc-logo-favi.jpg
+  og_image_secure_url: /themes/custom/tithe_calculator/images/tc-logo-favi.jpg
   og_site_name: '[site:name]'
   og_title: '[current-page:title]'
