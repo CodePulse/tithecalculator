@@ -1,0 +1,16 @@
+uuid: 764dab30-6a9b-47df-9cd7-b31608587979
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  title: '[current-page:title] | [site:name]'
+  canonical_url: '[current-page:url]'
+  image_src: /themes/custom/tithe_calculator/images/tc-logo.png
+  og_image: /themes/custom/tithe_calculator/images/tc-logo.png
+  og_image_secure_url: /themes/custom/tithe_calculator/images/tc-logo.png
+  og_site_name: '[site:name]'
+  og_title: '[current-page:title]'
