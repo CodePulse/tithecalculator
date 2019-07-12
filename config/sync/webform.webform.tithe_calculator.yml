@@ -12,7 +12,7 @@ id: tithe_calculator
 title: 'Tithe calculator'
 description: ''
 category: ''
-elements: "how_often_do_you_get_paid:\n  '#type': select\n  '#title': 'How often do you get paid ?'\n  '#options':\n    weekly: Weekly\n    monthly: Monthly\nhow_much_do_you_get_paid:\n  '#type': number\n  '#title': 'How much do you get paid ?'\ntithe_percentage:\n  '#type': number\n  '#title': 'Tithe percentage (%)'\n  '#min': '10'\ncaptcha:\n  '#type': captcha\n  '#captcha_type': recaptcha/reCAPTCHA\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Calculate"
+elements: "how_often_do_you_get_paid:\n  '#type': select\n  '#title': 'How often do you get paid ?'\n  '#options':\n    weekly: Weekly\n    monthly: Monthly\n  '#required': true\nhow_much_do_you_get_paid:\n  '#type': number\n  '#title': 'How much do you get paid ?'\n  '#required': true\ntithe_percentage:\n  '#type': number\n  '#title': 'Tithe percentage (%)'\n  '#min': '10'\n  '#required': true\ncaptcha:\n  '#type': captcha\n  '#captcha_type': recaptcha/reCAPTCHA\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Calculate"
 css: ''
 javascript: ''
 settings:
